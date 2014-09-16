@@ -144,7 +144,7 @@
 		if([hwString isEqualToString: @"iPhone2,1"])  
 			_hardwareModel = UIHardwareModeliPhone3GS;
 		
-		if([hwString isEqualToString: @"iPhone3,1"]) 
+		if([hwString isEqualToString: @"iPhone3,1"] || [hwString isEqualToString: @"iPhone3,3"]) 
 			_hardwareModel = UIHardwareModeliPhone4;
 		
 		if([hwString isEqualToString: @"iPhone3,2"]) 
