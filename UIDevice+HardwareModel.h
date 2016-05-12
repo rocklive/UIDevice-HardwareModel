@@ -9,81 +9,85 @@
 
 typedef NS_ENUM(NSInteger, UIHardwareModel) {
     UIHardwareModelUnknown = 0,
-    UIHardwareModelSimulator = 1,
     
-    UIHardwareModeliPhone1G = 2,
-    UIHardwareModeliPhone3G = 3,
-    UIHardwareModeliPhone3GS = 4,
-    UIHardwareModeliPhone4 = 5,
-    UIHardwareModeliPhone4Verizon = 6,
+    UIHardwareModelSimulator,
     
-    UIHardwareModeliPodTouch1G = 7,
-    UIHardwareModeliPodTouch2G = 8,
-    UIHardwareModeliPodTouch3G = 9,
-    UIHardwareModeliPodTouch4G = 10,
+    UIHardwareModeliPhone1G,
+    UIHardwareModeliPhone3G,
+    UIHardwareModeliPhone3GS,
+    UIHardwareModeliPhone4,
+    UIHardwareModeliPhone4Verizon,
+    UIHardwareModeliPhone4S,
+    UIHardwareModeliPhone5,
+    UIHardwareModeliPhone5Global,
+    UIHardwareModeliPhone5c,
+    UIHardwareModeliPhone5cGlobal,
+    UIHardwareModeliPhone5s,
+    UIHardwareModeliPhone5sGlobal,
+    UIHardwareModeliPhone6,
+    UIHardwareModeliPhone6Plus,
+    UIHardwareModeliPhone6s,
+    UIHardwareModeliPhone6sPlus,
+    UIHardwareModeliPhoneSE,
     
-    UIHardwareModeliPad = 11,
-    UIHardwareModeliPad2Wifi = 12,
-    UIHardwareModeliPad2GSM = 13,
-    UIHardwareModeliPad2CDMA = 14,
+    UIHardwareModeliPodTouch1G,
+    UIHardwareModeliPodTouch2G,
+    UIHardwareModeliPodTouch3G,
+    UIHardwareModeliPodTouch4G,
+    UIHardwareModeliPodTouch5G,
+    UIHardwareModeliPodTouch6G,
     
-    UIHardwareModeliPhone4S = 15,
+    UIHardwareModeliPad,
+    UIHardwareModeliPad2WiFi,
+    UIHardwareModeliPad2GSM,
+    UIHardwareModeliPad2CDMA,
+    UIHardwareModeliPad3WiFi,
+    UIHardwareModeliPad3GSM,
+    UIHardwareModeliPad3CDMA,
     
-    UIHardwareModeliPad3Wifi = 16,
-    UIHardwareModeliPad3GSM = 17,
-    UIHardwareModeliPad3CDMA = 18,
+    UIHardwareModeliPadMiniWiFi,
+    UIHardwareModeliPadMiniGSM,
+    UIHardwareModeliPadMiniCDMA,
     
-    UIHardwareModeliPhone5 = 19,
-    UIHardwareModeliPhone5Global = 20,
+    UIHardwareModeliPad4WiFi,
+    UIHardwareModeliPad4GSM,
+    UIHardwareModeliPad4CDMA,
     
-    UIHardwareModeliPodTouch5G = 21,
+    UIHardwareModeliPadMini2Wifi,
+    UIHardwareModeliPadMini2Cellular,
+    UIHardwareModeliPadMini2CellularChina ,
     
-    UIHardwareModeliPadMiniWifi = 22,
-    UIHardwareModeliPadMiniGSM = 23,
-    UIHardwareModeliPadMiniCDMA = 24,
+    UIHardwareModeliPadMini3WiFi,
+    UIHardwareModeliPadMini3Cellular,
+    UIHardwareModeliPadMini3CellularChina,
     
-    UIHardwareModeliPad4Wifi = 25,
-    UIHardwareModeliPad4GSM = 26,
-    UIHardwareModeliPad4CDMA = 27,
+    UIHardwareModeliPadMini4WiFi,
+    UIHardwareModeliPadMini4Cellular,
     
-    UIHardwareModeliPhone5c = 28,
-    UIHardwareModeliPhone5cGlobal = 29,
+    UIHardwareModeliPadAirWiFi,
+    UIHardwareModeliPadAirCellular,
+    UIHardwareModeliPadAirCellularChina,
     
-    UIHardwareModeliPhone5s = 30,
-    UIHardwareModeliPhone5sGlobal = 31,
+    UIHardwareModeliPadAir2WiFi,
+    UIHardwareModeliPadAir2Cellular,
     
-    UIHardwareModeliPhone6 = 32,
-    UIHardwareModeliPhone6Plus = 33,
+    UIHardwareModeliPadPro9_7WiFi,
+    UIHardwareModeliPadPro9_7Cellular,
     
-    UIHardwareModeliPhone6s = 34,
-    UIHardwareModeliPhone6sPlus = 35,
-    
-    UIHardwareModeliPadMini2Wifi = 36,
-    UIHardwareModeliPadMini2Cellular = 37,
-    UIHardwareModeliPadMini2CellularChina = 37,
-    
-    UIHardwareModeliPadMini3Wifi = 38,
-    UIHardwareModeliPadMini3Cellular = 39,
-    UIHardwareModeliPadMini3CellularChina = 39,
-    
-    UIHardwareModeliPadMini4Wifi = 40,
-    UIHardwareModeliPadMini4Cellular = 41,
-    
-    UIHardwareModeliPadAirWifi = 42,
-    UIHardwareModeliPadAirCellular = 43,
-    UIHardwareModeliPadAirCellularChina = 44,
-    
-    UIHardwareModeliPadAir2Wifi = 45,
-    UIHardwareModeliPadAir2Cellular = 46,
-    
-    UIHardwareModeliPodTouch6G = 47
-} NS_ENUM_AVAILABLE_IOS(6_0);
+    UIHardwareModeliPadPro12_9WiFi,
+    UIHardwareModeliPadPro12_9Cellular,
+};
 
-@interface UIDevice (HardwareModel) 
+@interface UIDevice (HardwareModel)
+
+/**
+ *	Returns hardware name of device instance
+ */
+- (NSString *)hardwareName;
 
 /**
  *	Returns hardware id of device instance
  */
--(UIHardwareModel)hardwareModel;
+- (UIHardwareModel)hardwareModel;
 
 @end
