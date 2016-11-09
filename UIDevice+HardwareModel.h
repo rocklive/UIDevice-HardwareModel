@@ -29,6 +29,8 @@ typedef NS_ENUM(NSInteger, UIHardwareModel) {
     UIHardwareModeliPhone6s,
     UIHardwareModeliPhone6sPlus,
     UIHardwareModeliPhoneSE,
+    UIHardwareModeliPhone7,
+    UIHardwareModeliPhone7Plus,
     
     UIHardwareModeliPodTouch1G,
     UIHardwareModeliPodTouch2G,
@@ -83,7 +85,7 @@ typedef NS_ENUM(NSInteger, UIHardwareModel) {
 /**
  *	Returns hardware name of device instance
  */
-- (NSString *)hardwareName;
++ (NSString *)hardwareName;
 
 /**
  *	Returns hardware id of device instance
