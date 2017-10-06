@@ -31,6 +31,9 @@ typedef NS_ENUM(NSInteger, UIHardwareModel) {
     UIHardwareModeliPhoneSE,
     UIHardwareModeliPhone7,
     UIHardwareModeliPhone7Plus,
+    UIHardwareModeliPhone8,
+    UIHardwareModeliPhone8Plus,
+    UIHardwareModeliPhoneX,
     
     UIHardwareModeliPodTouch1G,
     UIHardwareModeliPodTouch2G,

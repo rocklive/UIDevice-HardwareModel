@@ -95,6 +95,13 @@
       @"iPhone9,2" : @[@"iPhone 7 Plus",    @(UIHardwareModeliPhone7Plus)],
       @"iPhone9,4" : @[@"iPhone 7 Plus",    @(UIHardwareModeliPhone7Plus)],
       
+      @"iPhone10,1" : @[@"iPhone 8",    @(UIHardwareModeliPhone8)],
+      @"iPhone10,4" : @[@"iPhone 8",    @(UIHardwareModeliPhone8)],
+      @"iPhone10,5" : @[@"iPhone 8 Plus",    @(UIHardwareModeliPhone8Plus)],
+      @"iPhone9,4" : @[@"iPhone 8 Plus",    @(UIHardwareModeliPhone8Plus)],
+      @"iPhone10,3" : @[@"iPhone X",    @(UIHardwareModeliPhoneX)],
+      @"iPhone10,6" : @[@"iPhone X",    @(UIHardwareModeliPhoneX)],
+        
       @"iPod1,1" : @[@"iPod 1G", @(UIHardwareModeliPodTouch1G)],
       @"iPod2,1" : @[@"iPod 2G", @(UIHardwareModeliPodTouch2G)],
       @"iPod3,1" : @[@"iPod 3G", @(UIHardwareModeliPodTouch3G)],
